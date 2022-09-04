@@ -1,0 +1,87 @@
+// Common styles of the project
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Circe', sans-serif;
+    -webkit-overflow-scrolling: touch;
+    background: linear-gradient(90deg, #007CD7 9.16%, #008ADB 24.99%, #009FE1 50%, #00B4E7 69.04%, #00A9E4 83.32%);
+    padding-top: 93px;
+    & > * {
+        flex-shrink: 0;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+* {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+//Убрать стили айфона у инпутов
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+    // background: transparent;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+//Убирает крестик у инпутов ie
+input::-ms-clear {
+    display: none;
+}
+
+//Убирает глазик на type="password" в ie
+input::-ms-reveal {
+    display: none;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+.wrapper{
+    width: 1280px;
+    margin: 0 auto;
+}
+.section__title img{
+    pointer-events: none;
+}

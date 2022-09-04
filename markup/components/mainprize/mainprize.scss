@@ -1,0 +1,53 @@
+.mainprize{
+    padding-top: 50px;
+    &__title{
+        margin-bottom: 110px;
+    }
+    &__wintitle{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 50px;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 30px rgba(9, 42, 66, 0.5);
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    &__num{
+        font-size: 20px;
+        line-height: 40px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    &__img{
+        width: 580px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    &__name{
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 35px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 100%;
+        display: block;
+    }
+    .video{
+        width: 790px;
+        height: 400px;
+        margin: 0 auto 45px auto;
+    }
+}

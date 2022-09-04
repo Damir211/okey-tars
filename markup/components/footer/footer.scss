@@ -1,0 +1,68 @@
+.footer{
+    padding: 33px 0;
+    margin-top: auto;
+    background: linear-gradient(90deg, #00A9E4 9.16%, #00B4E7 24.99%, #009FE1 50%, #008ADB 69.04%, #007CD7 83.32%);
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        font-size: 21px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+}
+.info{
+    &__text{
+        font-size: 17px;
+        line-height: 23px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        span{
+            font-weight: bold;
+        }
+    }
+}
+.politic{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 15px;
+    border-bottom: 1px solid #fff;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    &:hover{
+        border-color: transparent;
+    }
+}
+.copyright{
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.tel{
+    &__number{
+        font-size: 42.5893px;
+        line-height: 57px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .footer__title{
+        text-align: center;
+        width: 100%;
+    }
+}
+.social{
+    &__container{
+        display: flex;
+    }
+    &__item{
+        margin-right: 10px;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
