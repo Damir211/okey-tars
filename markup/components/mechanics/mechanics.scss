@@ -64,6 +64,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-size: 0px;
     &__num{
         position: absolute;
         top: -90px;
@@ -261,5 +262,210 @@
             }
 
         }
+    }
+}
+@media only screen and (max-width: 1350px){
+    .section__title img{
+        top: -110px;
+    }
+    .mechanics__title{
+        margin-bottom: 75px;
+    }
+    .steps__container{
+        width: 950px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 65px;
+    }
+    .step:last-child{
+        margin-top: 40px;
+    }
+    .steps__info{
+        top: -65px;
+    }
+    .cash__bg img:nth-child(4){
+        display: none;
+    }
+}
+@media only screen and (max-width: 1005px){
+    .steps__container{
+        width: calc(100% - 50px);
+    }
+    .steps__info img{
+        width: 200px;
+    }
+    .steps__info{
+        top: -40px;
+    }
+    .step{
+        padding-left: 60px;
+    }
+    .section__title img{
+        top: -85px;
+    }
+    .cash__bg img:nth-child(3){
+        display: none;
+    }
+    .cash .cash__prize-img{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media only screen and (max-width: 820px){
+    .section__title img{
+        top: -70px;
+    }
+}
+@media only screen and (max-width: 760px){
+    .steps__info{
+        top: -20px;
+    }
+    .section__title{
+        font-size: 30px;
+    }
+    .steps__container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .step__num{
+        font-size: 172px;
+        line-height: 202px;
+    }
+    .step__bg{
+        width: 80px;
+        height: auto;
+        img{
+            max-width: 100%;
+        }
+    }
+    .step__text{
+        font-size: 12px;
+        line-height: 11px;
+        max-width: 155px;
+    }
+    .step__text span{
+        font-size: 12px;
+        line-height: 11px;
+    }
+    .step{
+        margin-top: 40px;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+    .step__num{
+        top: -40px;
+    }
+    .steps__container{
+        background-size: 0px;
+    }
+    .step{
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding-bottom: 40px;
+        padding-right: 10px;
+        background-size: 100%;
+    }
+    .week__prize:nth-child(1),
+    .week__prize:nth-child(2),
+    .week__prize:nth-child(3),
+    .week__prize:nth-child(4),
+    .week__prize:nth-child(5)
+    {
+        margin-top: 0;
+    }
+    .week__prize:nth-child(1),
+    .week__prize:nth-child(2),
+    .week__prize:nth-child(5),
+    .week__prize:nth-child(4){
+        width: 50%;
+    }
+    .week__prize:nth-child(3){
+        width: 100%;
+        order: 2;
+    }
+    .week__prizes .wrapper{
+        flex-wrap: wrap;
+    }
+    .m-title{
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .section__title img{
+        top: -47px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .section__title{
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .week__bg img:first-child{
+        top: -150px;
+        width: 130px;
+    }
+    .week__bg img:nth-child(2){
+        display: none;
+    }
+    .section__title img{
+        transform: scaleX(-1);
+    }
+    .m-title{
+        font-size: 11.994px;
+        line-height: 14px;
+    }
+    .mechanics__title{
+        margin-bottom: 28px;
+    }
+    .steps__info img{
+        width: 150px;
+    }
+    .steps__info {
+        top: -40px;
+    }
+    .steps{
+        padding-top: 10px;
+    }
+    .steps__container {
+        padding-bottom: 15px;
+    }
+    .week__prizes{
+        padding-top: 15px;
+    }
+    .cash__bg img:nth-child(1){
+        display: none;
+    }
+    .cash{
+        padding-top: 30px;
+        .m-title{
+            margin-bottom: 30px;
+        }
+    }
+    .cash .cash__prizes .wrapper{
+        flex-direction: column;
+    }
+    .cash .cash__prize .cash__prize-text{
+        font-size: 10.9119px;
+        line-height: 13px;
+    }
+    .cash .cash__prize-img{
+        width: 220px;
+        margin: 0 auto;
+    }
+    .cash{
+        padding-bottom: 100px;
+    }
+}
+@media only screen and (max-width: 430px){
+    .section__title img{
+        top: -38px;
+    }
+}
+@media only screen and (max-width: 360px){
+    .section__title img{
+        top: -32px;
     }
 }

@@ -73,3 +73,53 @@
         }
     }
 }
+@media only screen and (max-width: 1350px) {
+    .winners__bg img:nth-child(1){
+        top: -22px;
+    }
+}
+@media only screen and (max-width: 1005px) {
+    .winners__bg img:nth-child(1){
+        display: none;
+    }
+    .winners__container{
+        flex-direction: column;
+    }
+    .winners .datesblock{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .winners .datesblock__dates{
+        flex-wrap: wrap;
+    }
+    .winners .datesblock__date{
+        font-size: 30px;
+        line-height: 43px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+    .winners .datesblock__date span{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .winners .datesblock__title{
+        font-size: 21px;
+    }
+    .winners__bg img:nth-child(2){
+        display: none;
+    }
+    .winners__container{
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+    .winners__text{
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+@media only screen and (max-width: 480px){
+
+}

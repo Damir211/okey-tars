@@ -47,7 +47,7 @@ if(timerElement){
 }
 if(fixedLinkElement){
     window.addEventListener('scroll', function(){
-        let scrollTop = getBodyScrollTop() + 120;
+        let scrollTop = getBodyScrollTop() + 320;
         
         if(scrollTop > partnersBlockOffsetTop){
             fixedLinkElement.classList.add('active');

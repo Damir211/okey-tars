@@ -91,3 +91,97 @@
         color: #fff;
     }
 }
+@media only screen and (max-width: 1350px) {
+    .partners__title.section__title img{
+        top: -114px;
+    }
+    .partners__container{
+        width: 950px;
+    }
+    .partner img{
+        width: 145px;
+    }
+}
+@media only screen and (max-width: 1005px){
+    .partners__title.section__title img {
+        top: -110px;
+    }
+    .partners__container{
+        width: calc(100% - 50px);
+    }
+    .partner{
+        width: calc(25% - 15px);
+    }
+    .partner:nth-child(5n){
+        margin-right: 20px;
+    }
+    .partner:nth-child(4n){
+        margin-right: 0;
+    }
+    .partner img{
+        width: 100%;
+    }
+    .partners__list.hide-more .partner:nth-child(n+9) {
+        display: none;
+    }
+}
+@media only screen and (max-width: 820px){
+    .partners__title.section__title img {
+        top: -85px;
+    }
+}
+@media only screen and (max-width: 760px){
+    .partners__bg img{
+        display: none;
+    }
+    .partners__img{
+        width: 200px;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .partners__title.section__title img{
+        top: -48px;
+    }
+    .partners__title {
+        margin-top: -20px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .partners__title.section__title img{
+        transform: scaleX(-1);
+    }
+    .partners__img{
+        width: 166px;
+        margin-bottom: 6px;
+    }
+    .partners__text{
+        font-size: 17.3176px;
+        line-height: 14px;
+    }
+    .partners__list{
+        padding: 16px;
+    }
+    .button-visible-more{
+        font-size: 15px;
+    }
+    .button-visible-more {
+        padding: 11px 22px;
+    }
+    .partner-button-container{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 430px){
+    .partners__title.section__title img{
+        top: -38px;
+    }
+}
+@media only screen and (max-width: 360px){
+    .partners__title.section__title img{
+        top: -30px;
+    }
+}

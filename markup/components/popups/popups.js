@@ -33,3 +33,17 @@ document.querySelectorAll('.popup').forEach(popup => {
         }
     });
 });
+document.querySelectorAll('.header-mobile-menu-btn').forEach(btn => {
+    btn.addEventListener('click', function(){
+        let mobileMenu = document.querySelector('.mobile-menu')
+        if(!mobileMenu) return;
+        mobileMenu.classList.toggle('active');
+    });
+});
+document.querySelectorAll('.mobile-menu .nav__link').forEach(item => {
+    item.addEventListener('click', function(){
+        let mobileMenu = document.querySelector('.mobile-menu')
+        if(!mobileMenu) return;
+        mobileMenu.classList.remove('active');
+    });
+})

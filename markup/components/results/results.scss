@@ -135,3 +135,110 @@
         margin: 0 auto 45px auto;
     }
 }
+@media only screen and (max-width: 1350px) {
+    .results__nav a{
+        font-size: 16px;
+    }
+    .results__list{
+        flex-wrap: wrap;
+    }
+    .results__item{
+        margin-bottom: 30px;
+        
+    }
+}
+@media only screen and (max-width: 1005px) {
+    .results__bg img:nth-child(1){
+        display: none;
+    }
+}
+@media only screen and (max-width: 850px){
+    .results .video{
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+    .results .video__bg{
+        padding-bottom: 50.63%;
+        height: 0;
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+}
+@media only screen and (max-width: 760px){
+    .results__bg img:nth-child(3){
+        display: none;
+    }
+    .results__nav a{
+        padding: 10px;
+        font-size: 14px;
+        line-height: 15px;
+    }
+}
+@media only screen and (max-width: 660px){
+    .results__dates{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .results .datesblock{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .results__nav{
+        flex-direction: column;
+    }
+    .results__nav a{
+        margin-bottom: 10px;
+    }
+    .results__title{
+        font-size: 33px;
+        line-height: 33px;
+    }
+    .results__bg img:nth-child(2){
+        display: none;
+    }
+    .video__title{
+        font-size: 16px;
+        line-height: 19px;
+        padding: 10px;
+    }
+    .results__winnertitle {
+        font-size: 30px;
+        line-height: 33px;
+    }
+    .results .video{
+        margin: 0 auto 26px auto;
+    }
+    .results__text{
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .results__type{
+        font-size: 26px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .results__num{
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .results__list{
+        width: calc(100% - 50px);
+    }
+    .datesblock__dates{
+        flex-wrap: wrap;
+    }
+    .results__dates .datesblock__date{
+        margin-bottom: 10px;
+    }
+}
