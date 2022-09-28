@@ -1,0 +1,359 @@
+.slides {
+    background: linear-gradient(90deg, #007CD7 9.16%, #008ADB 24.99%, #009FE1 50%, #00B4E7 69.04%, #00A9E4 83.32%);
+    position: relative;
+    flex-grow: 1;
+
+    margin-top: -93px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    @media only screen and (max-width: 760px){
+        margin-top: -63px;
+    }
+    .logo{
+        position: absolute;
+        left: 0;
+        top: 1.927vw;
+        width: 10.885vw;
+        height: 3.594vw;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+    &__img{
+        width: 51.146vw;
+        img{
+            width: 100%;
+        }
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 4.010vw;
+        line-height: 4.167vw;
+        text-align: center;
+        color: #FFFFFF;
+        width: 51.146vw;
+        text-align: center;
+        margin-right: 3.854vw;
+        margin-top: 3.333vw;
+        margin-bottom: 1.146vw;
+    }
+    &__img{
+        margin-right: 3.854vw;
+    }
+    &__container{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        z-index: 2;
+        margin-left: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: 0.3s;
+        &.hide{
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+    
+    &__bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &__partners{
+        padding: 0.521vw 1.771vw;
+        background: #FFFFFF;
+        border-radius: 0.677vw;
+        margin-top: 2.188vw;
+        margin-right: 6.927vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 39.010vw;
+        height: 45.313vw;
+        img{
+            width: 5.885vw;
+        }
+        a{
+            margin: 0;
+            margin-bottom: -2.083vw;
+            display: block;
+            height: 3.906vw;
+        }
+        .partner{
+            margin: 0;
+            margin-bottom: -2.083vw;
+            width: auto;
+        }
+    }
+    &__prizes{
+        display: flex;
+        justify-content: center;
+    }
+    &__prize{
+        &:not(:last-child){
+            margin-right: 3.906vw;
+            width: 21.042vw;
+            img{
+                width: 21.042vw;
+            }
+        }
+        &:last-child{
+            width: 20.208vw;
+            .slide__prize-img img{
+                width: 19.688vw;
+            }
+        }
+        &-text{
+            font-weight: 600;
+            font-size: 1.667vw;
+            line-height: 1.823vw;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 12.917vw;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &__allprize{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    &__container{
+        width: 47.917vw;
+        margin-top: 2.604vw;
+        margin-right: 5.208vw;
+    }
+    &__info{
+        margin-bottom: 1.198vw;
+        img{
+            width: 27.188vw;
+        }
+    }
+    &.active{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    &__steps{
+        background-position: bottom center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        padding-bottom: 4.688vw;
+        margin-bottom: 1.563vw;
+        height: 16.354vw;
+        .slide__step-text{
+            height: 3.438vw;
+        }
+
+        &.slide__steps2{
+            .slide__step:nth-child(3){
+                img{
+                    width: 9.635vw;
+                }
+                .slide__step-num{
+                    left: -2.323vw;
+                }
+            }
+            
+
+        }
+    }
+    &__step{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        &:nth-child(1){
+            width: 13.125vw;
+            margin-left: 2.188vw;
+            margin-right: 1.771vw;
+            img{
+                width: 10vw;
+            }
+        }
+        &:nth-child(2){
+            width: 17.708vw;
+            margin-right: 1.198vw;
+            .slide__step-num{
+                left: -0.521vw;
+            }
+            img{
+                width: 9.427vw;
+            }
+        }
+        &:nth-child(3){
+            width: 12.344vw;
+            margin-right: 0.938vw;
+            .slide__step-num{
+                left: -2.323vw;
+            }
+            img{
+                width: 8.750vw;
+            }
+        }
+        &-num{
+            position: absolute;
+            top: -3.646vw;
+            left: -1.771vw;
+
+            font-weight: 800;
+            font-size: 16.198vw;
+            line-height: 19.010vw;
+            text-align: center;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        &-img{
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            img{
+                max-width: 100%;
+            }
+        }
+        &-text{
+            font-weight: 600;
+            font-size: 1.042vw;
+            line-height: 1.146vw;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            width: 100%;
+            text-align: center;
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+    &__prizelist{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3.125vw;
+        margin-right: 4.479vw;
+        max-width: 46.875vw;
+    }
+    &__prizeitem{
+        &-text{
+            font-weight: 600;
+            font-size: 1.667vw;
+            line-height: 1.823vw;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &-img{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            img{
+                width: 100%;
+            }
+        }
+        &:nth-child(1){
+            .slide__prizeitem-img{
+                width: 23.698vw;
+                height: 15.469vw;
+            }
+            margin-right: 1.042vw;
+        }
+        &:nth-child(2){
+            .slide__prizeitem-img{
+                width: 18.958vw;
+                height: 15.469vw;
+            }
+            .slide__prizeitem-text{
+                width: 20.833vw;
+            }
+        }
+        &:nth-child(3){
+            margin-top: 0.573vw;
+            margin-right: 1.667vw;
+            .slide__prizeitem-img{
+                width: 20.781vw;
+                height: 16.406vw;
+
+            }
+        }
+        &:nth-child(4){
+            margin-top: 0.573vw;
+            .slide__prizeitem-img{
+                width: 20.417vw;
+                height: 16.406vw;
+            }
+        }
+    }
+    &__finalprize{
+        margin-right: 1.667vw;
+        margin-top: 1.563vw;
+        margin-bottom: 1.563vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 53.125vw;
+        height: 100%;
+        &-img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+            margin-bottom: 1.198vw;
+        }
+        &-text{
+            font-weight: 600;
+            font-size: 1.667vw;
+            line-height: 2.188vw;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}
+.gift-bg{
+    width: 6.146vw;
+    height: 11.667vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+.line-bg{
+    width: 70.573vw;
+    height: 15.521vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+}

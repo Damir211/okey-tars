@@ -459,6 +459,16 @@
         padding-bottom: 100px;
     }
 }
+@media only screen and (max-width: 460px){
+    .week__bg img:first-child {
+        top: -118px;
+        width: 75px;
+    }
+    .cash__bg img:nth-child(2){
+        width: 75px;
+        top: -72px;
+    }
+}
 @media only screen and (max-width: 430px){
     .section__title img{
         top: -38px;

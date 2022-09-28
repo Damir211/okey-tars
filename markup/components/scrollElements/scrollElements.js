@@ -27,11 +27,13 @@ if(timerElement){
         let t = endDate - now;
         
         if (t >= 0) {
-            let hours = Math.floor(t / 1000 / 60 / 60);
+            var days = Math.floor(t/1000/60/60/24);
+            let hours = Math.floor((t/1000/60/60)%24);
             let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
             let secs = Math.floor((t % (1000 * 60)) / 1000);
         
             hours = hours < 10 ? ("0"+hours).slice(-2) : hours;
+            document.getElementById("timer__days").innerHTML = days+ 'д.';
 
             document.getElementById("timer__hours").innerHTML = hours;
         
@@ -40,7 +42,7 @@ if(timerElement){
             document.getElementById("timer__sec").innerHTML = ("0"+secs).slice(-2);
         
         } else {
-            timerElement.querySelector('.timer__time').innerHTML = "Завершён!";
+            timerElement.querySelector('.timer__time').innerHTML = "0д 00:00:00";
         }
         
     }, 1000);
